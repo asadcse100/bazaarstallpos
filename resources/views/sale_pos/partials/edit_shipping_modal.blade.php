@@ -50,7 +50,7 @@
 					<div class="col-md-6">
 				        <div class="form-group">
 				            {!! Form::label('delivery_person_modal', __('lang_v1.delivery_person') . ':' ) !!} <br>
-				            {!! Form::select('delivery_person_modal' $users, !empty($transaction->delivery_person) ? $transaction->delivery_person : null, ['class' => 'form-control select2 width-100','placeholder' => __('messages.please_select')]); !!}
+				            {!! Form::select('delivery_person_modal', $users, !empty($transaction->delivery_person) ? $transaction->delivery_person : null, ['class' => 'form-control select2 width-100','placeholder' => __('messages.please_select')]); !!}
 				        </div>
 				    </div>
 				    @php
