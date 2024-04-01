@@ -1,5 +1,6 @@
 @extends('layouts.home')
-@section('title', config('app.name', 'ultimatePOS'))
+<!-- @section('title', config('app.name', 'BazaarStall Business')) -->
+@section('title', 'BazaarStall Business')
 
 @section('content')
     <style type="text/css">
@@ -28,7 +29,8 @@
         }
     </style>
     <div class="title flex-center" style="font-weight: 600 !important;">
-        {{ config('app.name', 'ultimatePOS') }}
+        <!-- {{ config('app.name', 'BazaarStall Business') }} -->
+        BazaarStall Business
     </div>
     <p class="tagline">
         {{ env('APP_TITLE', '') }}

@@ -10,7 +10,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - {{ config('app.name', 'POS') }}</title> 
+    <!-- <title>@yield('title') - {{ config('app.name', 'BazaarStall') }}</title>  -->
+    <title>@yield('title') - BazaarStall</title> 
 
     @include('layouts.partials.css')
 
@@ -34,7 +35,8 @@
                     @if(file_exists(public_path('uploads/logo.png')))
                         <img src="/uploads/logo.png" class="img-rounded" alt="Logo" width="150">
                     @else
-                       {{ config('app.name', 'ultimatePOS') }}
+                       <!-- {{ config('app.name', 'BazaarStall') }} -->
+                       BazaarStall
                     @endif 
                     </a>
                     <br/>
